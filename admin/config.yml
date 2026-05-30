@@ -2,40 +2,68 @@ backend:
   name: git-gateway
   branch: main
 
-local_backend: true
-locale: ar
-
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
+
+locale: ar
 
 collections:
   - name: "settings"
     label: "إعدادات الموقع"
     files:
-      - name: "site"
-        label: "بيانات البراند والموقع"
+      - label: "بيانات البراند والموقع"
+        name: "site"
         file: "data/site.json"
         format: "json"
         fields:
-          - { label: "اسم البراند", name: "brandName", widget: "string" }
-          - { label: "حرف اللوجو", name: "logoText", widget: "string", required: false }
-          - { label: "صورة اللوجو", name: "logoImage", widget: "image", required: false }
-          - { label: "رقم واتساب بصيغة دولية", name: "whatsapp", widget: "string" }
-          - { label: "رقم الهاتف الظاهر", name: "phone", widget: "string" }
-          - { label: "إنستجرام", name: "instagram", widget: "string", required: false }
-          - { label: "مواعيد الطلب", name: "orderHours", widget: "string" }
-          - { label: "عنوان الهيرو", name: "heroTitle", widget: "text" }
-          - { label: "وصف الهيرو", name: "heroSubtitle", widget: "text" }
-          - { label: "صورة الهيرو", name: "heroImage", widget: "image" }
-          - { label: "عنوان عن البراند", name: "aboutTitle", widget: "text" }
-          - { label: "نص عن البراند", name: "aboutText", widget: "text" }
-          - { label: "صورة عن البراند", name: "aboutImage", widget: "image" }
+          - label: "اسم البراند"
+            name: "brandName"
+            widget: "string"
+          - label: "حرف اللوجو"
+            name: "logoText"
+            widget: "string"
+            required: false
+          - label: "صورة اللوجو"
+            name: "logoImage"
+            widget: "image"
+            required: false
+          - label: "رقم واتساب بصيغة دولية"
+            name: "whatsapp"
+            widget: "string"
+          - label: "رقم الهاتف الظاهر"
+            name: "phone"
+            widget: "string"
+          - label: "إنستجرام"
+            name: "instagram"
+            widget: "string"
+            required: false
+          - label: "مواعيد الطلب"
+            name: "orderHours"
+            widget: "string"
+          - label: "عنوان الهيرو"
+            name: "heroTitle"
+            widget: "text"
+          - label: "وصف الهيرو"
+            name: "heroSubtitle"
+            widget: "text"
+          - label: "صورة الهيرو"
+            name: "heroImage"
+            widget: "image"
+          - label: "عنوان عن البراند"
+            name: "aboutTitle"
+            widget: "text"
+          - label: "نص عن البراند"
+            name: "aboutText"
+            widget: "text"
+          - label: "صورة عن البراند"
+            name: "aboutImage"
+            widget: "image"
 
   - name: "products_data"
     label: "المنتجات"
     files:
-      - name: "products"
-        label: "قائمة المنتجات"
+      - label: "قائمة المنتجات"
+        name: "products"
         file: "data/products.json"
         format: "json"
         fields:
@@ -44,14 +72,25 @@ collections:
             widget: "list"
             summary: "{{fields.name}} - {{fields.price}}"
             fields:
-              - { label: "اسم المنتج", name: "name", widget: "string" }
+              - label: "اسم المنتج"
+                name: "name"
+                widget: "string"
               - label: "التصنيف"
                 name: "category"
                 widget: "select"
                 options:
-                  - { label: "خبز", value: "bread" }
-                  - { label: "مخبوزات", value: "pastry" }
-                  - { label: "بوكسات", value: "box" }
-              - { label: "السعر", name: "price", widget: "string" }
-              - { label: "الوصف", name: "description", widget: "text" }
-              - { label: "صورة المنتج", name: "image", widget: "image" }
+                  - label: "خبز"
+                    value: "bread"
+                  - label: "مخبوزات"
+                    value: "pastry"
+                  - label: "بوكسات"
+                    value: "box"
+              - label: "السعر"
+                name: "price"
+                widget: "string"
+              - label: "الوصف"
+                name: "description"
+                widget: "text"
+              - label: "صورة المنتج"
+                name: "image"
+                widget: "image"
