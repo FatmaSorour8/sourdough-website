@@ -1,16 +1,156 @@
-# دليل العميل
+# Client Guide - Sourdough Bakery Website
 
-افتح لوحة التحكم:
-https://your-site.netlify.app/admin
+This guide explains how to manage the website content using the admin panel.
 
-من خلالها يمكنك:
-- تعديل بيانات البراند
-- تعديل رقم واتساب
-- رفع اللوجو
-- تعديل صورة الهيرو
-- إضافة منتجات
-- تعديل منتجات
-- حذف منتجات
-- رفع صور المنتجات
+---
 
-بعد الضغط على Save، انتظر دقيقة تقريبًا حتى يعيد Netlify نشر الموقع.
+## 1. Admin Panel Link
+
+Open the admin panel from:
+
+```text
+https://your-domain.netlify.app/admin
+```
+
+Replace `your-domain.netlify.app` with the actual website link.
+
+---
+
+## 2. Login
+
+Use the email invited by the website owner through Netlify Identity.
+
+If this is your first time logging in:
+
+1. Open the invitation email.
+2. Click **Accept the invite**.
+3. Create a new password.
+4. Go to `/admin`.
+5. Login using your email and password.
+
+---
+
+## 3. Edit Website Settings
+
+From the admin panel, open:
+
+```text
+إعدادات الموقع
+```
+
+Then choose:
+
+```text
+بيانات البراند والموقع
+```
+
+You can edit:
+
+- Brand name
+- Logo
+- WhatsApp number
+- Phone number
+- Instagram account
+- Order working hours
+- Hero title
+- Hero description
+- Hero image
+- About brand title
+- About brand text
+- About brand image
+
+After editing, click:
+
+```text
+Save
+```
+
+---
+
+## 4. Manage Products
+
+From the admin panel, open:
+
+```text
+المنتجات
+```
+
+Then choose:
+
+```text
+قائمة المنتجات
+```
+
+You can:
+
+- Add a new product
+- Edit an existing product
+- Delete a product
+- Upload product images
+- Edit product price
+- Edit product description
+- Change product category
+
+Available product categories:
+
+- Bread
+- Pastry
+- Boxes
+
+After editing, click:
+
+```text
+Save
+```
+
+---
+
+## 5. Upload Images
+
+When editing the logo, hero image, about image, or product images:
+
+1. Click the image upload field.
+2. Choose an image from your device.
+3. Wait until the image finishes uploading.
+4. Click **Save**.
+
+Uploaded images will be saved inside:
+
+```text
+assets/uploads
+```
+
+---
+
+## 6. When Changes Appear on the Website
+
+After clicking **Save**, Netlify will automatically rebuild and publish the website.
+
+This usually takes from 30 seconds to 2 minutes.
+
+If the changes do not appear immediately:
+
+1. Wait for one minute.
+2. Refresh the website.
+3. Clear browser cache if needed.
+
+---
+
+## 7. Important Notes
+
+- Do not delete important website files from GitHub.
+- Do not rename the `data` folder.
+- Do not rename the `admin` folder.
+- Do not remove `site.json` or `products.json`.
+- Product images should be clear and optimized for web use.
+- Recommended image formats: JPG, PNG, or WEBP.
+
+---
+
+## 8. Support
+
+For any technical issue, contact the website developer.
+
+---
+
+© 2026 Sourdough Bakery. All rights reserved.
