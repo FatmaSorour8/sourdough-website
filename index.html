@@ -48,7 +48,11 @@
   "servesCuisine": "Bakery",
   "priceRange": "$$"
 }
-  </script>
+
+  if (window.location.hash.includes("recovery_token")) {
+    window.location.href = "/admin/" + window.location.hash;
+  }
+</script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
