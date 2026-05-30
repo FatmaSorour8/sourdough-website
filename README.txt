@@ -1,59 +1,143 @@
-# ساوردو - النسخة النهائية للرفع على GitHub و Netlify
+# 🥖 Sourdough Bakery Website
 
-## ارفعي كل الملفات والفولدرات الموجودة هنا على GitHub
+A premium bakery website built for a handmade sourdough brand.
 
-الهيكل المهم:
+## ✨ Features
 
-- index.html
-- menu.html
-- about.html
-- contact.html
-- netlify.toml
-- admin/index.html
-- admin/config.yml
-- data/site.json
-- data/products.json
-- assets/css/style.css
-- assets/js/cms-site.js
-- assets/uploads/.gitkeep
-- assets/img/.gitkeep
+- Modern and elegant bakery design
+- Fully responsive (Desktop, Tablet, Mobile)
+- Arabic RTL support
+- Smooth animations and transitions
+- Dynamic products loaded from JSON
+- WhatsApp ordering integration
+- Brand information management
+- SEO optimized
+- Netlify CMS (Decap CMS) integration
+- GitHub + Netlify deployment
+- Image upload support through CMS
+- No database required
 
-## بعد الرفع على GitHub
+---
 
-1. افتحي Netlify
-2. Add new site
-3. Import from GitHub
-4. اختاري Repository
-5. Build command: اتركيه فارغ
-6. Publish directory: .
-7. Deploy
+## 📄 Pages
 
-## تفعيل لوحة التحكم
+- Home
+- Menu
+- About Brand
+- Contact
 
-من Netlify:
-1. Site configuration
-2. Identity
-3. Enable Identity
-4. Services
-5. Git Gateway
-6. Enable Git Gateway
-7. Registration preferences = Invite only
-8. Invite users
-9. ادخلي إيميل العميل أو إيميلك
+---
 
-لوحة التحكم:
-https://your-site.netlify.app/admin
+## 🛠 Technologies Used
 
-## ملاحظة
-فولدر assets/uploads يحتوي على ملف .gitkeep حتى يرفعه GitHub وهو فارغ. بعد استخدام Decap CMS الصور الجديدة ستتحفظ داخله.
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript (Vanilla JS)
+- Decap CMS
+- Netlify
+- GitHub
 
+---
 
-## SEO Update
-تم إضافة meta tags و Open Graph و Twitter Cards و Schema JSON-LD و robots.txt و sitemap.xml.
-تم تعديل Order Badge في الموبايل ليظهر بعرض مناسب ولا يأخذ عرض الصورة بالكامل.
+## ⚙️ CMS Access
 
+Admin Panel:
 
-## Final Update
-- تم تحويل النصوص لصيغة المذكر/المحايدة.
-- تم حذف أيقونات المنتجات من الكروت.
-- تم زيادة المسافات الجانبية للصفحة على الشاشات الكبيرة والمتوسطة.
+```
+/admin
+```
+
+Content can be managed directly through Decap CMS without editing code.
+
+Editable content:
+
+- Brand information
+- Logo
+- Hero section
+- About section
+- Products
+- Product images
+- Contact information
+- WhatsApp number
+
+---
+
+## 📂 Project Structure
+
+```
+/
+│
+├── admin/
+│   ├── index.html
+│   └── config.yml
+│
+├── assets/
+│   ├── css/
+│   ├── js/
+│   └── uploads/
+│
+├── data/
+│   ├── site.json
+│   └── products.json
+│
+├── index.html
+├── menu.html
+├── about.html
+├── contact.html
+├── robots.txt
+├── sitemap.xml
+└── netlify.toml
+```
+
+---
+
+## 🚀 Deployment
+
+The project is deployed using:
+
+- GitHub Repository
+- Netlify Hosting
+- Netlify Identity
+- Git Gateway
+
+Any update pushed to GitHub automatically triggers a new deployment on Netlify.
+
+---
+
+## 🔍 SEO
+
+Included:
+
+- Meta Title
+- Meta Description
+- Open Graph Tags
+- Twitter Cards
+- Structured Data (Schema.org)
+- robots.txt
+- sitemap.xml
+
+---
+
+## 📱 Responsive Design
+
+Optimized for:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile Devices
+
+---
+
+## 📞 Contact
+
+WhatsApp:
+
+```
++20 128 842 7468
+```
+
+---
+
+© 2026 Sourdough Bakery. All rights reserved.
