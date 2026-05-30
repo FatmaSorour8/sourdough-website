@@ -1,0 +1,52 @@
+{
+  "products": [
+    {
+      "name": "Classic Sourdough",
+      "category": "bread",
+      "price": "180 ج.م",
+      "description": "رغيف ساوردو كلاسيك بقشرة مقرمشة وقلب طري، مصنوع بخميرة طبيعية وتخمير بطيء.",
+      "image": "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=900&q=80",
+      "icon": "bi-flower1"
+    },
+    {
+      "name": "Seeded Sourdough",
+      "category": "bread",
+      "price": "210 ج.م",
+      "description": "رغيف ساوردو بالحبوب، غني ومشبع ومناسب للفطور الصحي.",
+      "image": "https://images.unsplash.com/photo-1598373182133-52452f7691ef?auto=format&fit=crop&w=900&q=80",
+      "icon": "bi-droplet"
+    },
+    {
+      "name": "Rosemary Focaccia",
+      "category": "pastry",
+      "price": "150 ج.م",
+      "description": "فوكاتشيا بزيت الزيتون والروزماري، بقوام هش وطعم دافي.",
+      "image": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=900&q=80",
+      "icon": "bi-leaf"
+    },
+    {
+      "name": "Butter Croissant",
+      "category": "pastry",
+      "price": "65 ج.م",
+      "description": "كرواسون زبدة مورق وخفيف مناسب للفطور أو مع القهوة.",
+      "image": "https://images.unsplash.com/photo-1623334044303-241021148842?auto=format&fit=crop&w=900&q=80",
+      "icon": "bi-moon-stars"
+    },
+    {
+      "name": "Breakfast Box",
+      "category": "box",
+      "price": "260 ج.م",
+      "description": "بوكس فطور متنوع مناسب لشخصين، بتغليف بسيط وشيك.",
+      "image": "https://images.unsplash.com/photo-1517433670267-08bbd4be890f?auto=format&fit=crop&w=900&q=80",
+      "icon": "bi-cup-hot"
+    },
+    {
+      "name": "Gift Bakery Box",
+      "category": "box",
+      "price": "320 ج.م",
+      "description": "بوكس مخبوزات هدية دافي ومناسب للمناسبات البسيطة.",
+      "image": "https://images.unsplash.com/photo-1549931319-a545dcf3bc73?auto=format&fit=crop&w=900&q=80",
+      "icon": "bi-gift"
+    }
+  ]
+}

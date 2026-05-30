@@ -1,0 +1,76 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+locale: ar
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+collections:
+  - name: "settings"
+    label: "إعدادات الموقع"
+    files:
+      - name: "site"
+        label: "بيانات البراند والموقع"
+        file: "data/site.json"
+        format: "json"
+        fields:
+          - { label: "اسم البراند", name: "brandName", widget: "string" }
+          - { label: "حرف اللوجو", name: "logoText", widget: "string", required: false }
+          - { label: "صورة اللوجو", name: "logoImage", widget: "image", required: false }
+          - { label: "رقم واتساب بصيغة دولية", name: "whatsapp", widget: "string" }
+          - { label: "رقم الهاتف الظاهر", name: "phone", widget: "string" }
+          - { label: "إنستجرام", name: "instagram", widget: "string", required: false }
+          - { label: "مواعيد الطلب", name: "orderHours", widget: "string" }
+          - { label: "عنوان الهيرو", name: "heroTitle", widget: "text" }
+          - { label: "وصف الهيرو", name: "heroSubtitle", widget: "text" }
+          - { label: "صورة الهيرو", name: "heroImage", widget: "image" }
+          - { label: "عنوان عن البراند", name: "aboutTitle", widget: "text" }
+          - { label: "نص عن البراند", name: "aboutText", widget: "text" }
+          - { label: "صورة عن البراند", name: "aboutImage", widget: "image" }
+
+  - name: "products_data"
+    label: "المنتجات"
+    files:
+      - name: "products"
+        label: "قائمة المنتجات"
+        file: "data/products.json"
+        format: "json"
+        fields:
+          - label: "المنتجات"
+            name: "products"
+            widget: "list"
+            summary: "{{fields.name}} - {{fields.price}}"
+            fields:
+              - { label: "اسم المنتج", name: "name", widget: "string" }
+              - label: "التصنيف"
+                name: "category"
+                widget: "select"
+                options:
+                  - { label: "خبز", value: "bread" }
+                  - { label: "مخبوزات", value: "pastry" }
+                  - { label: "بوكسات", value: "box" }
+              - { label: "السعر", name: "price", widget: "string" }
+              - { label: "الوصف", name: "description", widget: "text" }
+              - { label: "صورة المنتج", name: "image", widget: "image" }
+              - label: "الأيقونة"
+                name: "icon"
+                widget: "select"
+                default: "bi-stars"
+                options:
+                  - { label: "Stars", value: "bi-stars" }
+                  - { label: "Flower", value: "bi-flower1" }
+                  - { label: "Flower 2", value: "bi-flower2" }
+                  - { label: "Leaf", value: "bi-leaf" }
+                  - { label: "Droplet", value: "bi-droplet" }
+                  - { label: "Gem", value: "bi-gem" }
+                  - { label: "Heart", value: "bi-heart" }
+                  - { label: "Bag Heart", value: "bi-bag-heart" }
+                  - { label: "Gift", value: "bi-gift" }
+                  - { label: "Cup Hot", value: "bi-cup-hot" }
+                  - { label: "Moon Stars", value: "bi-moon-stars" }
+                  - { label: "Sun", value: "bi-brightness-high" }
+                  - { label: "Box Heart", value: "bi-box2-heart" }
+                  - { label: "Send Heart", value: "bi-send-heart" }
