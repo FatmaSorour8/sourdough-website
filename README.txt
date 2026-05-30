@@ -46,3 +46,14 @@ https://your-site.netlify.app/admin
 
 ## ملاحظة
 فولدر assets/uploads يحتوي على ملف .gitkeep حتى يرفعه GitHub وهو فارغ. بعد استخدام Decap CMS الصور الجديدة ستتحفظ داخله.
+
+
+## SEO Update
+تم إضافة meta tags و Open Graph و Twitter Cards و Schema JSON-LD و robots.txt و sitemap.xml.
+تم تعديل Order Badge في الموبايل ليظهر بعرض مناسب ولا يأخذ عرض الصورة بالكامل.
+
+
+## Final Update
+- تم تحويل النصوص لصيغة المذكر/المحايدة.
+- تم حذف أيقونات المنتجات من الكروت.
+- تم زيادة المسافات الجانبية للصفحة على الشاشات الكبيرة والمتوسطة.

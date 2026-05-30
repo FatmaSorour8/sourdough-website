@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sourdough-eg.netlify.app/sitemap.xml

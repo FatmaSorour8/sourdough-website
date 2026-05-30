@@ -11,11 +11,11 @@ const FALLBACK_SITE = {
   "phone": "01288427468",
   "instagram": "@sourdough.brand",
   "orderHours": "من 10 صباحًا إلى 8 مساءً",
-  "heroTitle": "ساوردو دافي، طازج، ومخبوز يوميًا بجودة تليق ببراندك.",
-  "heroSubtitle": "مخبوزات ساوردو طبيعية، بطعم غني وقوام مثالي، مناسبة للفطور، العزومات، والهدايا الصغيرة اللذيذة.",
+  "heroTitle": "ساوردو دافئ، طازج، ومخبوز يوميًا بجودة تليق ببراندك.",
+  "heroSubtitle": "مخبوزات ساوردو طبيعية بطعم غني وقوام مثالي، مناسبة للفطور والعزومات والهدايا الصغيرة اللذيذة.",
   "heroImage": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=1100&q=80",
   "aboutTitle": "كل رغيف وراه وقت، صبر، وحب للتفاصيل.",
-  "aboutText": "الساوردو مش مجرد خبز، ده تجربة طبيعية بتبدأ بتخمير بطيء ومكونات بسيطة ونظيفة. هدفنا نقدم منتج بيتي فاخر بشكل احترافي يناسب كل بيت.",
+  "aboutText": "الساوردو مش مجرد خبز، ده تجربة طبيعية بتبدأ بتخمير بطيء ومكونات بسيطة ونظيفة. هدفنا تقديم منتج بيتي فاخر بشكل احترافي يناسب كل بيت.",
   "aboutImage": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=1100&q=80"
 };
 
@@ -132,7 +132,6 @@ function productCard(product) {
       <div class="product-card">
         <img src="${escapeHtml(product.image)}" alt="${escapeHtml(product.name)}">
         <div class="p-4">
-          <div class="icon-bubble"><i class="bi ${escapeHtml(product.icon || "bi-stars")}"></i></div>
           <h3>${escapeHtml(product.name)}</h3>
           <p>${escapeHtml(product.description)}</p>
           <div class="price">${escapeHtml(product.price)}</div>
@@ -150,13 +149,12 @@ function menuCard(product) {
         <div class="menu-content">
           <div class="d-flex justify-content-between gap-3">
             <div>
-              <div class="icon-bubble"><i class="bi ${escapeHtml(product.icon || "bi-stars")}"></i></div>
               <h3>${escapeHtml(product.name)}</h3>
             </div>
             <strong>${escapeHtml(product.price)}</strong>
           </div>
           <p>${escapeHtml(product.description)}</p>
-          <a href="contact.html?product=${encodeURIComponent(product.name)}" class="mini-link">اطلبي المنتج</a>
+          <a href="contact.html?product=${encodeURIComponent(product.name)}" class="mini-link">اطلب المنتج</a>
         </div>
       </div>
     </div>
@@ -185,7 +183,7 @@ function renderContent(data) {
 
   const select = document.getElementById("product");
   if (select) {
-    select.innerHTML = `<option value="">اختاري المنتج</option>` + data.products.map(p => `<option>${escapeHtml(p.name)}</option>`).join("");
+    select.innerHTML = `<option value="">اختر المنتج</option>` + data.products.map(p => `<option>${escapeHtml(p.name)}</option>`).join("");
     const params = new URLSearchParams(window.location.search);
     const selectedProduct = params.get("product");
     if (selectedProduct) {
